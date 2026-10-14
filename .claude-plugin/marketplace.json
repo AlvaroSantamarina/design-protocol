@@ -1,0 +1,12 @@
+{
+  "name": "design-protocol",
+  "description": "Marketplace for the design-protocol plugin.",
+  "owner": { "name": "Alvaro Santamarina" },
+  "plugins": [
+    {
+      "name": "design-protocol",
+      "source": "./",
+      "description": "Design a PostgreSQL schema decision by decision, with a numbered log, tested DDL and schema reviews."
+    }
+  ]
+}
