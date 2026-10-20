@@ -1,6 +1,6 @@
 {
   "name": "design-protocol",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A guided, decision-by-decision protocol for designing a PostgreSQL schema with Claude Code: one topic per message, options with a recommendation, an explicit OK before anything is recorded, a numbered decision log, DDL tested in a throwaway database and reviewed per domain and as a whole.",
   "author": { "name": "Alvaro Santamarina" },
   "homepage": "https://github.com/AlvaroSantamarina/design-protocol",

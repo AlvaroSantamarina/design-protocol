@@ -48,6 +48,7 @@ Shall we close the defaults with C?
 | `references/conventions.md` | The cross-cutting topics to decide before any table, each with options and the starting recommendation that held up (uuidv7, `timestamptz` vs `date`, money classes, currency in the column name, `RESTRICT` + composite FKs, lifecycle columns, immutability by privileges, fail-closed actor, lock order…). |
 | `references/checklist.md` | The per-table checklist and **15 PostgreSQL pitfalls found by running the DDL** (triggers inheriting a definer's `search_path`, NULL in CHECK equalities, default privileges reaching views, generated columns in BEFORE triggers, deadlocks from inconsistent lock order…). |
 | `references/testing.md` | How a domain is proven: throwaway database, load as the owner role, exercise as the real roles, negative cases, idempotency, the flows script. |
+| `skills/postgres-best-practices` | The PostgreSQL rules each recommendation cites (PG 14–18): schema design, indexing, query patterns and optimization, transaction isolation, security and roles, connection pooling, bulk loading, backups, replication, upgrades, diagnostics. |
 | `agents/schema-reviewer` | Reviews schema files (not a diff) in **domain** or **full** mode, reproduces findings in a local container, never pulls images, never re-litigates decisions. |
 | `templates/` | The design document skeleton, a DDL file, the bootstrap, the flows script and `run-schema.sh` (start a container, bootstrap, load every file as the owner, run the flows, stop). |
 
@@ -60,7 +61,7 @@ claude plugin install design-protocol@design-protocol
 
 Or load it for one session: `claude --plugin-dir /path/to/design-protocol`.
 
-Then ask for it: *"Let's design the database from these notes"*, or *"Let's review the schema table by table"*. A PostgreSQL best-practices skill, if you have one, is used as the source of the rules each recommendation cites.
+Then ask for it: *"Let's design the database from these notes"*, or *"Let's review the schema table by table"*. The bundled `postgres-best-practices` skill is the source of the rules each recommendation cites.
 
 ## Principles
 
